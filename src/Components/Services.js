@@ -5,7 +5,7 @@ import "./css/services.css";
 
 function Services() {
   return (
-    <div className="services-section">
+    <div id="services-section" className="services-section">
       <h2>Services We Offer</h2>
       <p>Explore the range of security services we provide</p>
 

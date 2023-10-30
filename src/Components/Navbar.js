@@ -1,24 +1,33 @@
 import React from "react";
-import './css/Navbar.css'
+import "./css/Navbar.css";
+import ScrollTo from "./ScrollTo";
 
 function Navbar() {
   return (
     <div>
       <nav>
         <div className="logo">
-            <div className="logo">
-            <img src="./images/logoicon.png"/>
-        </div>
+          <img src="./images/logoicon.png" alt="Logo" />
         </div>
         <input type="checkbox" id="click" />
-        <label for="click" className="menu-btn">
+        <label htmlFor="click" className="menu-btn">
           <i className="fas fa-bars"></i>
         </label>
         <ul>
-          <li><a className="active" href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li>
+            <a className="active" href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <ScrollTo target="#about-us-section">About</ScrollTo>
+          </li>
+          <li>
+            <ScrollTo target="#services-section">Services</ScrollTo>
+          </li>
+          <li>
+            <ScrollTo target="#contact-section">Contact</ScrollTo>
+          </li>
         </ul>
       </nav>
     </div>

@@ -4,7 +4,7 @@ import './css/AboutUs.css'
 
 function AboutUs() {
   return (
-    <div className="about-us">
+    <div id="about-us-section" className="about-us">
       <div className="about-card top-card about-card-hover">
         <h2>About Us</h2>
         <p>
