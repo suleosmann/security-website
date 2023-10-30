@@ -1,13 +1,18 @@
 .service {
+  padding: 50px;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
   width: 700px;
-  
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.service:hover {
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0 0 10px #ee6c09; /* Add a subtle shadow on hover */
+}
 .service-icon {
   background-color: #fff;
-  border: 3px solid red;
+  border: 3px solid #ee6c09;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -23,13 +28,14 @@
   padding:7px;
 }
 
-h2, h3 {
+h3 {
   margin-top: 10px;
 }
-.service h2, .service p{
+.services-section h2, .services-section p{
   text-align: center;
 }
-.service h2{
+.services-section h2{
+  margin-top: 10px;
   font-size: 48px;
   color:#ee6c09;
 }
