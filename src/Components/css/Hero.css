@@ -4,7 +4,7 @@ height: 90vh;
 width: 100%;
 background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
     url("/public/images/herobgimage.jpg")
-    no-repeat center bottom / cover;
+    no-repeat center top / cover;
 color: whitesmoke;
 }
 .container {
@@ -21,7 +21,7 @@ justify-content: left;
 font-size: 3rem;
 text-transform: uppercase;
 margin-bottom: 1rem;
-color: #ee6c09;
+color: #ffad00;
 }
 #hero .info h2 {
 font-size: 1.5rem;
@@ -39,7 +39,7 @@ border-radius: 4px;
 font-size: 1.8rem;
 padding: 0.2em 0.9em;
 margin-top: 2rem;
-color: #ee6c09;
+color: #ffad00;
 }
 @media only screen and (max-width: 768px) {
 html {

@@ -15,7 +15,7 @@
   
   .about-card {
     background: #111;
-    border: 2px solid #ee6c09;
+    border: 2px solid 	#ffad00;
     padding: 20px;
     margin: 10px;
     width: 100%;
@@ -33,7 +33,7 @@
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 10px;
-    color: #ee6c09;
+    color: #ffad00;
   }
   
   .about-card p {
@@ -46,7 +46,7 @@
     padding-left: 10px;
   }
   .about-card span{
-    color: #ee6c09;
+    color: #ffad00;
   }
   .about-card li{
     margin-top: 2px;

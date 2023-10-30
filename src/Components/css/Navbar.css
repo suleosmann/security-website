@@ -33,7 +33,7 @@ nav{
   nav ul li a.active,
   nav ul li a:hover{
     color: #111;
-    background: #fff;
+    background: #ffad00;
   }
   nav .menu-btn i{
     color: #fff;
