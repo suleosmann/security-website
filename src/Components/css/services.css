@@ -26,10 +26,10 @@
 h2, h3 {
   margin-top: 10px;
 }
-h2, p{
+.service h2, .service p{
   text-align: center;
 }
-h2{
+.service h2{
   font-size: 48px;
   color:#ee6c09;
 }
