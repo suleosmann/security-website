@@ -23,7 +23,7 @@ function Contact() {
     });
   }, []);
   return (
-    <div class="contact-container">
+    <div id ="contact-section"class="contact-container">
       <span class="big-circle"></span>
       <div class="form">
         <div class="contact-info">
