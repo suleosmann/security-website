@@ -101,7 +101,7 @@ input[type="checkbox"]{
 
 /* Hero.css */
 #hero {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
     url("/public/herobgimage.jpg")
@@ -122,6 +122,7 @@ input[type="checkbox"]{
   font-size: 3rem;
   text-transform: uppercase;
   margin-bottom: 1rem;
+  color: #ee6c09;
 }
 #hero .info h2 {
   font-size: 1.5rem;
@@ -153,6 +154,7 @@ input[type="checkbox"]{
 /* ContactInfo.css */
 .contact-info {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   background-color: #f2f2f2; /* Adjust the background color as needed */
@@ -163,7 +165,8 @@ input[type="checkbox"]{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem 25rem;
+  margin: 1rem 19rem; /* Adjust the margins as needed */
+  text-align: center;
 }
 
 .info-label {
@@ -176,4 +179,96 @@ input[type="checkbox"]{
   padding-top: 10px;
 }
 
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .contact-info {
+    padding: 10px;
+  }
+
+  .contact-item {
+    margin: 1rem 1rem; /* Adjust the margins for smaller screens */
+  }
+
+  .info-label {
+    font-size: 24px; /* Adjust the font size for smaller screens */
+  }
+
+  .info-value {
+    font-size: 16px; /* Adjust the font size for smaller screens */
+  }
+}
+
 /* End of ContactInfo.css */
+
+
+/* AboutUs.css */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1b1b1b; /* Background color */
+  color: #fff; /* Text color */
+  padding: 20px;
+  text-align: center;
+}
+
+.top-card {
+  margin-bottom: 20px;
+}
+
+.about-card {
+  background: #111;
+  border: 2px solid #ee6c09;
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  max-width: 800px;
+  
+}
+
+.mission-choose-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about-card h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ee6c09;
+}
+
+.about-card p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.about-card ul{
+  list-style-type: decimal;
+  text-align: left;
+  padding-left: 10px;
+}
+.about-card span{
+  color: #ee6c09;
+}
+.about-card li{
+  margin-top: 2px;
+}
+.about-card:hover {
+  transform: scale(1.05); /* Increase the scale (size) of the card on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 10px;
+  }
+  .about-card h2 {
+    font-size: 20px;
+  }
+  .about-card p {
+    font-size: 16px;
+  }
+}
+
+/* End of AboutUs */
