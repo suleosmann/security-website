@@ -15,7 +15,7 @@ function Hero(){
                 needs. With years of expertise, we are committed to ensuring
                 the safety and security of your home, business, and assets.
             </p>
-            <a href="#">Our Services</a>
+            <a href="#services-section">Our Services</a>
             </div>
         </div>
         </div>

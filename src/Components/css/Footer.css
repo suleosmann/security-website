@@ -1,0 +1,19 @@
+/* Footer Styles */
+.footer {
+  background-color: #0e0d17; /* New background color */
+  color: #fff;
+  padding: 2rem 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0e0d17; /* New background color */
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}

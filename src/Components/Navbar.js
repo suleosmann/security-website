@@ -15,7 +15,7 @@ function Navbar() {
         </label>
         <ul>
           <li>
-            <a className="active" href="#">
+            <a href="#">
               Home
             </a>
           </li>
@@ -26,7 +26,7 @@ function Navbar() {
             <ScrollTo target="#services-section">Services</ScrollTo>
           </li>
           <li>
-            <ScrollTo target="#contact-section">Contact</ScrollTo>
+            <ScrollTo target="#contact-section"><a className="active">Contact</a></ScrollTo>
           </li>
         </ul>
       </nav>
