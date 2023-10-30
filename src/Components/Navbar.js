@@ -1,4 +1,5 @@
 import React from "react";
+import './css/Navbar.css'
 
 function Navbar() {
   return (
@@ -6,7 +7,7 @@ function Navbar() {
       <nav>
         <div className="logo">
             <div className="logo">
-            <img src="./logoicon.png"/>
+            <img src="./images/logoicon.png"/>
         </div>
         </div>
         <input type="checkbox" id="click" />

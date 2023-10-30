@@ -1,0 +1,73 @@
+/* AboutUs.css */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b1b1b; /* Background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .top-card {
+    margin-bottom: 20px;
+  }
+  
+  .about-card {
+    background: #111;
+    border: 2px solid #ee6c09;
+    padding: 20px;
+    margin: 10px;
+    width: 100%;
+    max-width: 800px;
+    
+  }
+  
+  .mission-choose-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .about-card h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ee6c09;
+  }
+  
+  .about-card p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .about-card ul{
+    list-style-type: decimal;
+    text-align: left;
+    padding-left: 10px;
+  }
+  .about-card span{
+    color: #ee6c09;
+  }
+  .about-card li{
+    margin-top: 2px;
+  }
+  .about-card:hover {
+    transform: scale(1.05); /* Increase the scale (size) of the card on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    
+  }
+  /* Media query for responsive design */
+  @media (max-width: 768px) {
+    .about-us {
+      padding: 10px;
+    }
+    .about-card h2 {
+      font-size: 20px;
+    }
+    .about-card p {
+      font-size: 16px;
+    }
+  }
+  
+  /* End of AboutUs */
+  
