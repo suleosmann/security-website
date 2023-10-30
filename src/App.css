@@ -1,46 +1,179 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-/* Reset some default styles using the asterisk (*) selector */
-* {
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+} 
+nav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: #1b1b1b;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+  flex-wrap: wrap;
+}
+nav .logo img{
+  width: 50px;
+  margin-top: 10px;
+}
+nav ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+nav ul li{
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+  color: #111;
+  background: #fff;
+}
+nav .menu-btn i{
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+@media (max-width: 1000px){
+  nav{
+    padding: 0 40px 0 50px;
+  }
+}
+@media (max-width: 920px) {
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 100%;
+    margin: 40px 0;
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 0px;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background: none;
+    color: cyan;
+  }
 }
 
-/* Style for the navigation bar */
-.navbar {
-  background-color: #12111f;
-  color: #fff;
+
+/* Hero.css */
+#hero {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
+    url("/public/herobgimage.jpg")
+      no-repeat center bottom / cover;
+  color: whitesmoke;
+}
+.container {
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+    /* text-align: center; */
+}
+#hero .info h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+#hero .info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+#hero .info p {
+  font-size: 1.2rem;
+  max-width: 50%;
+}
+#hero .info a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 1.8rem;
+  padding: 0.2em 0.9em;
+  margin-top: 2rem;
+  color: #ee6c09;
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+
+/* end of Hero.css */
+
+/* ContactInfo.css */
+.contact-info {
   display: flex;
   justify-content: center;
+  padding: 20px;
+  background-color: #f2f2f2; /* Adjust the background color as needed */
+  color: #333; /* Adjust text color as needed */
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 10px 20px;
-  font-family: 'Roboto', sans-serif;
+  margin: 1rem 25rem;
 }
 
-/* Style for the logo */
-.logo{
-  display: flex;
-}
-.logo img {
-  width: 40px; 
-  margin-right: 10px;
+.info-label {
+  font-size: 28px;
+  color: #ee6c09;
 }
 
-
-/* Style for the menu */
-.menu ul {
-  display: flex;
-  list-style: none;
-  font-size: 18px;
-  margin-left: 35.5rem; 
+.info-value {
+  font-size: 17px;
+  padding-top: 10px;
 }
 
-.menu li {
-  margin: 0 40px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
-}
+/* End of ContactInfo.css */
