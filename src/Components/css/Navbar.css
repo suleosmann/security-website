@@ -87,6 +87,6 @@ nav{
     nav ul li a.active,
     nav ul li a:hover{
       background: none;
-      color: cyan;
+      color: #ffad00;
     }
   }
