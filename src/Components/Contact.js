@@ -56,13 +56,10 @@ function Contact() {
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
+              <a href="https://www.tiktok.com/@broomsville.surve">
+                <i class="fab fa-tiktok"></i>
               </a>
             </div>
           </div>

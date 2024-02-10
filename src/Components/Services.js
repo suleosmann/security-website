@@ -12,11 +12,21 @@ function Services() {
       <div className="services-row">
         <Service service={servicedata[0]} />
         <Service service={servicedata[1]} />
+        <Service service={servicedata[7]} />
       </div>
 
       <div className="services-row">
-        <Service service={servicedata[2]} />
+        <Service service={servicedata[9]} />
         <Service service={servicedata[3]} />
+        <Service service={servicedata[8]} />
+      </div>
+      <div className="services-row">
+        <Service service={servicedata[4]} />
+        <Service service={servicedata[5]} />
+        <Service service={servicedata[6]} />
+      </div>
+      <div className="services-row">
+        <Service service={servicedata[2]} />
       </div>
     </div>
   );
